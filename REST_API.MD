@@ -223,7 +223,7 @@ Note that you should expect this to *not* be a exhaustive list and handle unknow
     | side | [OrderSide](./DATA_TYPES.MD#OrderSide) | true | - | Order side. Required only when `isCloseOrder` is `false` |
     | price | decimal | true | - | Order price. Required only when `type` is `limit` |
     | size | long | true | - | Order quantity. Required only when `isCloseOrder` is `false` |
-    | timeInForce | [TimeInForce](./DATA_TYPES.MD#TimeInForce) | false | `gtc` if `type` if `limit`; `ioc` if `type` is `market` | Time in force of the order |
+    | timeInForce | [TimeInForce](./DATA_TYPES.MD#TimeInForce) | true | `gtc` if `type` if `limit`; `ioc` if `type` is `market` | Time in force of the order |
 
     > **NOTE**
     >

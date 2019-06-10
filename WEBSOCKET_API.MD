@@ -355,7 +355,7 @@ This channel maintains the latest level-2 orderbook under an instrument.
 
     The `data` field on this channel is an **instance** of [Orderbook](./DATA_TYPES.MD#Orderbook)
 
-## `level2` Channel
+## `ticker` Channel
 
 This channel maintains the latest ticker under an instrument.
 
@@ -403,7 +403,7 @@ This channel maintains the open orders of a user.
 
     The `data` field on this channel is an **array** of [Order](./DATA_TYPES.MD#Order)
 
-## `positiosn` Channel
+## `positions` Channel
 
 This channel maintains positions under all instruments of a user.
 
