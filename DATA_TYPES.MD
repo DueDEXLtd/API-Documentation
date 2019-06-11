@@ -21,6 +21,7 @@ These are the data types used across restful and WebSocket APIs in DueDEX.
 | - | - | - |
 | instrument | string | Id of the instrument |
 | orderId | long | Order id |
+| clientOrderId | string | Client order id |
 | type | [OrderType](#OrderType) | Order type |
 | isCloseOrder | bool | Whether the order is a close order |
 | side | [OrderSide](#OrderSide) | Order side |

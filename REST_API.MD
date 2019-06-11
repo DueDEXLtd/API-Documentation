@@ -218,6 +218,7 @@ Note that you should expect this to *not* be a exhaustive list and handle unknow
     | Field | Type | Optional | Default | Remark |
     | - | - | - | - | - |
     | instrument | string | false | | Id of the instrument |
+    | clientOrderId | string | true | - | Unique client id under the instrument with a maximum of 36 characters |
     | type | [OrderType](./DATA_TYPES.MD#OrderType) | false | | Order type |
     | isCloseOrder | bool | true | false | Whether the order is a close order |
     | side | [OrderSide](./DATA_TYPES.MD#OrderSide) | true | - | Order side. Required only when `isCloseOrder` is `false` |
@@ -250,7 +251,8 @@ Note that you should expect this to *not* be a exhaustive list and handle unknow
     | Field | Type | Optional | Default | Remark |
     | - | - | - | - | - |
     | instrument | string | false | | Id of the instrument |
-    | orderId | long | false | | Id of the order |
+    | clientOrderId | string | true | - | Client order id. One and only one of `clientOrderId` and `orderId` msut be provided |
+    | orderId | long | true | - | Id of the order. One and only one of `clientOrderId` and `orderId` msut be provided |
 
 - Response
 
